@@ -37,12 +37,30 @@
 
 //now by using tagname
 
-var itemgroup=document.getElementsByTagName('li');
-itemgroup[2].style.backgroundColor='yellow';
+// var itemgroup=document.getElementsByTagName('li');
+// itemgroup[2].style.backgroundColor='yellow';
 
-for(let i=0;i<itemgroup.length;i++){
-    itemgroup[i].style.color='red';
+// for(let i=0;i<itemgroup.length;i++){
+//     itemgroup[i].style.color='red';
+// }
+
+//query 
+
+
+// var seconditem=document.querySelector('.list-group-item:nth-child(2)');
+// seconditem.style.backgroundColor='green';
+
+// var thirditem=document.querySelector('.list-group-item:nth-child(3)');
+// thirditem.style.color='transparent';
+
+
+//query All
+
+var scnditem=document.querySelectorAll('.list-group-item');
+scnditem[1].style.color='green';
+
+var odditems=document.querySelectorAll('li:nth-child(odd)');
+
+for(let i=0;i<odditems.length;i++){
+    odditems[i].style.backgroundColor='green';
 }
-
-
-
