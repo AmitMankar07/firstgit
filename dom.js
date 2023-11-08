@@ -17,3 +17,10 @@ header.style.border='solid 3px black';
 var items=document.querySelector('.title');
 items.style.fontweight='bold';
 items.style.color='green';
+
+var itemgroup=document.getElementsByClassName('list-group-item');
+itemgroup[2].style.backgroundColor='green';
+
+for(let i=0;i<itemgroup.length;i++){
+    itemgroup[i].style.fontWeight='bold '
+}
