@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+         <h1 >Expense Tracker</h1>
+         <hr>
+        <form id="my-form" class="form-inline mb-4">
+
+         <div>
+                <label for="ExpenseAmount">Expense Amount :</label>
+                 <input type="number" id="expamt" value="Enter amount">
+         </div>
+               <br> 
+                <div>
+                    <label for="Description">Choose Description :</label>
+                <input type="text"  id="desc"  >
+                </div>
+                <br>
+                <div>
+                    <label for="category">Choose category: </label>
+             <select name="category" id="category">
+             <option value="Movie"selected="selected" >Movie</option>
+                <option value="Food">Food</option>
+                <option value="Fuel">Fuel</option>
+                <option value="Grocery">Grocery</option>
+                <option value="Rent">Rent</option>
+                <option value="Elctricity bills">Electricity Bills</option>
+                </select>
+                </div>
+                <br>
+
+                <button id="butn" class="btn" >Submit</button>
+        </form>
+        <ul id="expitems">
+
+        </ul>
+
+
+
+     </div>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     <script src="src.js"></script>
+</body>
+</html>
