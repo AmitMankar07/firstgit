@@ -45,6 +45,7 @@ function clickHandler(event){
     expitemsElement.appendChild(li);
 }
 
+
 function removeExp(e){
     if(e.target.classList.contains('delete')){
         if(confirm('Are you sure?')){
@@ -53,7 +54,7 @@ function removeExp(e){
             var expdesc=userText.split('-')[1];
 
             localStorage.removeItem(expdesc);
-            
+
             expitemsElement.removeChild(li);
         }
     }
